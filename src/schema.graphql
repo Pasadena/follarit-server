@@ -1,0 +1,34 @@
+type Query {
+  data: FoliData!,
+  racks: [Rack!]!,
+  rack(id: String!): Rack
+}
+
+type FoliData {
+  racks: [Rack!]!,
+  operators: [Operator!]!
+  racks_total: Int!,
+  bikes_total_avail: Int!,
+  generated: Int!,
+  lastupdate: Int!
+}
+
+type Rack {
+  id: String!,
+  operator: String!,
+  name: String!,
+  last_seen: Int!,
+  lon: Float!,
+  lat: Float!,
+  bikes_avail: Int!,
+  slots_total: Int!,
+  slots_avail: Int!
+}
+
+type Operator {
+  id:  String!,
+  name: String!,
+  email: String!,
+  hotline: String!,
+  website: String!
+}

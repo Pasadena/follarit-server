@@ -1,0 +1,12 @@
+{
+  "name": "follarit-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Simo-Pekka Koskinen",
+  "description": "A small GraphQL backend that is used to parse Föli's bike-data",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "graphql-yoga": "^1.14.12"
+  }
+}
